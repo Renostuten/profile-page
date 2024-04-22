@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(164, 244, 244);
+}
+
+.whole-body {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
