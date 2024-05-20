@@ -1,6 +1,7 @@
 body {
     background-color: rgb(242, 213, 132);
     color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
 }
 
 .whole-body {
@@ -38,15 +39,43 @@ body {
     margin-bottom: 25px;
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+#number {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+#message {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
 .interactive {
+    transition: opacity 0.15s, padding 0.5s, border-radius 0.5s;
     border-radius: 50%;
+    cursor: pointer;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(193, 255, 255);
+}
+
+.interactive:hover {
+    opacity: 0.8;
     padding-top: 125px;
     padding-bottom: 125px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+.interactive:active {
+    opacity: 0.6;
 }
 
 .gaming {
@@ -63,6 +92,10 @@ body {
 
 .socials {
     margin-bottom: 100px;
+}
+
+.discord-container {
+    padding-bottom: 25px;
 }
 
 .discord {
@@ -89,6 +122,10 @@ body {
 
 .discord:active {
     opacity: 0.6;
+}
+
+.instagram-container {
+    padding-bottom: 25px;
 }
 
 .instagram {
