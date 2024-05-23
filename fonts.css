@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Dancing';
+    src: url(fonts/misc/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url(fonts/misc/SourceCodePro-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Major-mono';
+    src: url(fonts/misc/MajorMonoDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url(fonts/misc/Orbitron-VariableFont_wght.ttf);
+}
