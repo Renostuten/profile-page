@@ -7,95 +7,134 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="whole-body">
-        <div class="intro">
-            <h1>
-                Brendan's page
-            </h1>
-            <p>
-                Hi, I'm Brendan, also known as "Renostuten" online.
-            </p>
-            <p>
-                I am currently a student at UNSW who primarily focuses on computer science.
-            </p>
-        </div>
-        <div class="about-me">
-            <h2>
-                About me
-            </h2>
-        
-            <p>
-                Name: Brendan He
-                <br>
-                Age: 19
-                <br>
-                Degree: Bachelor of computer science/economics
-                <br>
-                Fun Facts:
-            </p>
-            <ul>
-                <li>
-                    I play the piano
-                </li>
-                <li>
-                    I like to create music
-                </li>
-                <li>
-                    I play basketball
-                </li>
-            </ul>
-        </div>
-        <div class="interactive-container">
-            <div id="number">
-                0
+    <div class="fade-in-container">
+        <div class="welcome-background"></div>
+        <h1 class="fade-in-text">
+            Welcome to...
+        </h1>
+    </div>
+    <div class="content">
+        <div class="whole-body">
+            <div class="fade-in-section intro">
+                <h1 class="title-font">
+                    Brendan's page
+                </h1>
+                <p>
+                    Hi, I'm Brendan.
+                </p>
+                <p>
+                    I am currently a student at UNSW who primarily focuses on computer science.
+                </p>
             </div>
-            <div id="message"></div>
-            <button class="interactive">
-                Click me!
-            </button>
-        </div>
-        <div class="gaming">
-            <h2>
-                Games I play
-            </h2>
-            <ul>
-                <h3>
+            <div class="fade-in-section about-me">
+                <h2 class="title-font">
+                    About me
+                </h2>
+            
+                <p>
+                    Name: Brendan He
+                    <br>
+                    Age: 19
+                    <br>
+                    Degree: Bachelor of computer science/economics
+                    <br>
+                    Fun Facts:
+                </p>
+                <ul>
                     <li>
-                        Warframe
+                        I play the piano
                     </li>
                     <li>
-                        Monster Hunter: World
+                        I like to create music
                     </li>
                     <li>
-                        Elden Ring
+                        I play basketball
                     </li>
-                    <li>
-                        Path of Exile
-                    </li>
-                    <li>
-                        Geometry dash
-                    </li>
-                </h3>
-            </ul>
-        </div>
-        <div class="socials">
-            <h2>
-                Socials/Online platforms
-            </h2>
-            <div class="discord-container">
-                <button class="discord">
-                    Discord
+                </ul>
+            </div>
+            <div class="fade-in-section interactive-container">
+                <div id="number">
+                    3.
+                </div>
+                <button class="interactive">
+                    Click me!
                 </button>
             </div>
-            <div class="instagram-container">
-                <button class="instagram">
-                    Instagram
-                </button>
+            <div class="fade-in-section gaming">
+                <h2 class="title-font">
+                    Games I play
+                </h2>
+                <div class="flex-container">
+                    <div class="game-list">
+                        <ul>
+                            <h3>
+                                <li>
+                                    Warframe
+                                    <a href="https://www.youtube.com/watch?v=1JSvebmoduQ&ab_channel=GamingDauG" target="_blank">
+                                        preview
+                                    </a>
+                                </li>
+                                <li>
+                                    Monster Hunter: World
+                                    <a href="https://www.youtube.com/watch?v=Q9Z5jYAsZeI&ab_channel=ArisMH" target="_blank">
+                                        preview
+                                    </a>
+                                </li>
+                                <li>
+                                    Elden Ring
+                                    <a href="https://www.youtube.com/watch?v=K_03kFqWfqs&ab_channel=BANDAINAMCOEurope" target="_blank">
+                                        preview
+                                    </a>
+                                </li>
+                                <li>
+                                    Path of Exile
+                                    <a href="https://www.youtube.com/watch?v=F1pJxPYx8n8&ab_channel=AsmongoldClips" target="_blank">
+                                        preview
+                                    </a>
+                                </li>
+                                <li>
+                                    Geometry dash
+                                    <a href="https://youtu.be/alafxkFTprU?si=J1rxcPEsZ07Fx3pM" target="_blank">
+                                        preview
+                                    </a>
+                                </li>
+                            </h3>
+                        </ul>
+                    </div>
+                    <div>
+                        <img class="msi-logo" src="images/msi-logo.png">
+                    </div>
+                </div>
             </div>
-            <div class="github-container">
-                <button class="github">
-                    Github
-                </button>
+            <div class="fade-in-section socials">
+                <h2 class="title-font">
+                    Socials/Online platforms
+                </h2>
+                <div class="flex-container">
+                    <div class="social-container">
+                        <div class="discord-container">
+                            <button class="copy-button discord" copy-text="renostuten">
+                                Discord
+                                <img class="discord-image" src="images/discord.png">
+                            </button>
+                        </div>
+                        <div class="instagram-container">
+                            <button class="copy-button instagram" copy-text="@renostuten">
+                                Instagram
+                                <img class="instagram-image" src="images/Instagram_logo.png">
+                            </button>
+                        </div>
+                        <div class="github-container">
+                            <button class="copy-button github" copy-text="Renostuten">
+                                Github
+                                <img class="github-image" src="images/github.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="social-img-container">
+                        <img class="social-img" src="images/social-circle.jpg">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,7 +1,71 @@
+@import url('fonts.css');
+
 body {
-    background-color: rgb(242, 213, 132);
     color: rgb(0, 0, 0);
-    font-family: Arial, sans-serif;
+    background-color: black;
+    font-family: Source;
+}
+
+.fade-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-background {
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/circle_gif.gif);
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    filter: brightness(1);
+    transition: filter 0.1s;
+}
+
+.fade-in-text {
+    opacity: 0;
+    font-family: Dancing;
+    font-size: 100px;
+    color: white;
+    animation: fadeIn 4s ease-in forwards;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    background-image: url(images/bigger_circle_gif.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-font {
+    font-family: Orbitron;
 }
 
 .whole-body {
@@ -10,13 +74,14 @@ body {
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 100px;
 }
 
 .intro {
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(236, 213, 194);
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     margin-bottom: 25px;
     padding-top: 25px;
@@ -24,7 +89,7 @@ body {
 }
 
 .about-me {
-    background-color: rgb(236, 213, 194);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -36,6 +101,9 @@ body {
 }
 
 .interactive-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-bottom: 25px;
     margin-bottom: 25px;
     align-items: center;
     display: flex;
@@ -48,13 +116,6 @@ body {
     margin: 20px 0;
 }
 
-#message {
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
-
 .interactive {
     transition: opacity 0.15s, padding 0.5s, border-radius 0.5s;
     border-radius: 50%;
@@ -63,15 +124,15 @@ body {
     padding-bottom: 25px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: rgb(193, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .interactive:hover {
     opacity: 0.8;
-    padding-top: 125px;
-    padding-bottom: 125px;
-    padding-left: 105px;
-    padding-right: 105px;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 .interactive:active {
@@ -79,7 +140,7 @@ body {
 }
 
 .gaming {
-    background-color: rgb(236, 213, 194);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -90,8 +151,28 @@ body {
     padding-bottom: 25px;
 }
 
+.msi-logo {
+    height: 200px;
+    width: 170px;
+}
+
 .socials {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 100px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-container {
+    display: inline-block;
 }
 
 .discord-container {
@@ -108,9 +189,18 @@ body {
     background-color: rgb(75, 120, 233);
     color: white;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.discord-image {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
 }
 
 .discord:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     cursor: pointer;
     padding-left: 30px;
@@ -138,9 +228,18 @@ body {
     background-color: rgb(204, 84, 231);
     color: white;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.instagram-image {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
 }
 
 .instagram:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     cursor: pointer;
     padding-left: 30px;
@@ -156,17 +255,26 @@ body {
 
 .github {
     transition: opacity 0.15s, padding 0.5s, border-radius 0.5s;
-    border: none;
+    border: fill;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(10, 6, 66);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.github-image {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
 }
 
 .github:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     cursor: pointer;
     padding-left: 30px;
@@ -178,4 +286,14 @@ body {
 
 .github:active {
     opacity: 0.6;
+}
+
+.social-img-container {
+    display: inline-block;
+    align-items: right;
+}
+
+.social-img {
+    width: 250px;
+    height: 250px;
 }
